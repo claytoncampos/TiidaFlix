@@ -108,5 +108,3 @@ FormField.propTypes = {
 };
 
 export default FormField;
-
-//46minutos aula 4
