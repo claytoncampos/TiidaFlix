@@ -6,7 +6,7 @@ import Button from '../../../components/Button';
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
   };
