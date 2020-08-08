@@ -6,7 +6,7 @@ import Button from '../../../components/Button';
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
   };
@@ -30,7 +30,7 @@ function CadastroCategoria() {
 
   useEffect(() => {
     console.log('aloooo');
-    const uri = 'http://localhost:8080/categorias';
+    const uri = 'https://tiidaflix.herokuapp.com/categorias/';
     fetch(uri)
       .then(async (respostaDoservidor) => {
         const resposta = await respostaDoservidor.json();
@@ -117,8 +117,8 @@ function CadastroCategoria() {
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
+          <li key={`${categoria.id}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>
