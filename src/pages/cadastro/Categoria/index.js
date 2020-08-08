@@ -30,7 +30,7 @@ function CadastroCategoria() {
 
   useEffect(() => {
     console.log('aloooo');
-    const uri = 'http://localhost:8080/categorias';
+    const uri = 'https://tiidaflix.herokuapp.com/categorias/';
     fetch(uri)
       .then(async (respostaDoservidor) => {
         const resposta = await respostaDoservidor.json();
