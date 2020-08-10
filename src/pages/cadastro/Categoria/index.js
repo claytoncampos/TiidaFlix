@@ -29,9 +29,10 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    console.log('aloooo');
-    const uri = 'https://tiidaflix.herokuapp.com/categorias/';
-    fetch(uri)
+    const URL_TOP = window.location.hostname.includes('localhost')
+    ? 'http://localhost:8080/categorias'
+    : 'https://tiidaflix.herokuapp.com/categorias/';
+    fetch(URL_TOP)
       .then(async (respostaDoservidor) => {
         const resposta = await respostaDoservidor.json();
         setCategorias([
@@ -44,7 +45,7 @@ function CadastroCategoria() {
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {values.nome}
+        {values.titulo}
       </h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
@@ -62,7 +63,7 @@ function CadastroCategoria() {
           label="Nome da Categoria"
           type="text"
           name="nome"
-          value={values.nome}
+          value={values.titulo}
           onChange={handleChange}
         />
 
