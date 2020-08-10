@@ -1,7 +1,7 @@
 import React from 'react';
-import Menu from '../Menu'
-import Footer from '../Footer'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import Menu from '../Menu';
+import Footer from '../Footer';
 
 const Main = styled.main`
   background-color: var(--black);
@@ -12,15 +12,16 @@ const Main = styled.main`
   padding-right: 5%px;
 `;
 
-function PageDefault({children}){
-return (
-  <>
-    <Menu/>
+// eslint-disable-next-line react/prop-types
+function PageDefault({ children }) {
+  return (
+    <>
+      <Menu />
       <Main>
-       {children}
+        {children}
       </Main>
-    <Footer />
-  </>
+      <Footer />
+    </>
 
   );
 }

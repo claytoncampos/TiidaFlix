@@ -30,8 +30,8 @@ function CadastroCategoria() {
 
   useEffect(() => {
     const URL_TOP = window.location.hostname.includes('localhost')
-    ? 'http://localhost:8080/categorias'
-    : 'https://tiidaflix.herokuapp.com/categorias/';
+      ? 'http://localhost:8080/categorias'
+      : 'https://tiidaflix.herokuapp.com/categorias/';
     fetch(URL_TOP)
       .then(async (respostaDoservidor) => {
         const resposta = await respostaDoservidor.json();
@@ -62,7 +62,7 @@ function CadastroCategoria() {
         <FormField
           label="Nome da Categoria"
           type="text"
-          name="nome"
+          name="titulo"
           value={values.titulo}
           onChange={handleChange}
         />
