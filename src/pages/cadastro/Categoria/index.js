@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import PageDefault from '../../../components/PageDefault';
-import FormField from '../../../components/FormField';
-import Button from '../../../components/Button';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import PageDefault from "../../../components/PageDefault";
+import FormField from "../../../components/FormField";
+import Button from "../../../components/Button";
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    titulo: '',
-    descricao: '',
-    cor: '',
+    titulo: "",
+    descricao: "",
+    cor: ""
   };
   const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(valoresIniciais);
@@ -17,28 +17,25 @@ function CadastroCategoria() {
     // chave: nome, descricao, bla, bli
     setValues({
       ...values,
-      [chave]: valor, // nome: 'valor'
+      [chave]: valor // nome: 'valor'
     });
   }
 
   function handleChange(infosDoEvento) {
     setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
+      infosDoEvento.target.getAttribute("name"),
+      infosDoEvento.target.value
     );
   }
 
   useEffect(() => {
-    const URL_TOP = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias'
-      : 'https://tiidaflix.herokuapp.com/categorias/';
-    fetch(URL_TOP)
-      .then(async (respostaDoservidor) => {
-        const resposta = await respostaDoservidor.json();
-        setCategorias([
-          ...resposta,
-        ]);
-      });
+    const URL_TOP = window.location.hostname.includes("localhost")
+      ? "http://localhost:8080/categorias"
+      : "https://tiidaflix.herokuapp.com/categorias/";
+    fetch(URL_TOP).then(async (respostaDoservidor) => {
+      const resposta = await respostaDoservidor.json();
+      setCategorias([...resposta]);
+    });
   }, []);
 
   return (
@@ -48,17 +45,14 @@ function CadastroCategoria() {
         {values.titulo}
       </h1>
 
-      <form onSubmit={function handleSubmit(infosDoEvento) {
-        infosDoEvento.preventDefault();
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
+      <form
+        onSubmit={function handleSubmit(infosDoEvento) {
+          infosDoEvento.preventDefault();
+          setCategorias([...categorias, values]);
 
-        setValues(valoresIniciais);
-      }}
+          setValues(valoresIniciais);
+        }}
       >
-
         <FormField
           label="Nome da Categoria"
           type="text"
@@ -105,28 +99,18 @@ function CadastroCategoria() {
           </label>
         </div> */}
 
-        <Button>
-          Cadastrar
-        </Button>
+        <Button>Cadastrar</Button>
       </form>
 
-      {categorias.length === 0 && (
-        <div>
-          Loading...
-        </div>
-      )}
+      {categorias.length === 0 && <div>Loading...</div>}
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.id}`}>
-            {categoria.titulo}
-          </li>
+          <li key={`${categoria.id}`}>{categoria.titulo}</li>
         ))}
       </ul>
 
-      <Link to="/">
-        Ir para home
-      </Link>
+      <Link to="/">Ir para home</Link>
     </PageDefault>
   );
 }
