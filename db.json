@@ -2,43 +2,47 @@
   "categorias": [
     {
       "id": 1,
-      "titulo": "Front End",
+      "titulo": "Opnião Sincera",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.youtube.com/watch?v=I5Rl73wFmWs"
+        "text": "Opniões de Donos",
+        "url": "https://www.youtube.com/watch?v=AzTUuPSGFUk"
       }
     },
     {
       "id": 2,
-      "titulo": "Back End",
+      "titulo": "Test Drives",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "Pilotando o Tiida",
+        "url": "https://www.youtube.com/watch?v=-ozuF9PjiiU"
       }
     },
     {
       "id": 3,
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Manutenção",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/cursos-online-mobile"
+        "text": "Manutenção Preventica e Cuidados",
+        "url": "https://www.youtube.com/watch?v=jfrwzUJcTW0"
       }
     },
     {
       "id": 4,
-      "titulo": "Filmes",
-      "cor": "orange"
+      "titulo": "Marcelo Barlotti",
+      "cor": "orange",
+      "link_extra": {
+        "text": "Manutenção - Dicas, e passo a passo (Canal mmBarlotti",
+        "url": "https://www.youtube.com/user/mmbarlotti"
+      }
     },
     {
       "id": 5,
-      "titulo": "Games",
+      "titulo": "Tunados",
       "cor": "red",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Carros Personalizados",
+        "url": "https://www.youtube.com/watch?v=dqFrHGjBQ3o"
       }
     }
   ],
@@ -46,150 +50,108 @@
     {
       "id": 1,
       "categoriaId": 1,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=I5Rl73wFmWs"
+      "titulo": "Nissan Tiida Será Que Vale  a Pena?",
+      "url": "https://www.youtube.com/watch?v=AzTUuPSGFUk"
     },
     {
       "id": 2,
       "categoriaId": 1,
-      "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+      "titulo": "Tiida",
+      "url": "https://www.youtube.com/watch?v=V688ABqNFNk"
     },
     {
       "id": 3,
       "categoriaId": 1,
-      "titulo": "Componentização com VanillaJS #AluraMais",
-      "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+      "titulo": "Vale a Pena em 2020",
+      "url": "https://www.youtube.com/watch?v=Cb829OwlzTk"
     },
     {
       "id": 4,
       "categoriaId": 1,
-      "titulo": "Pare de chutar e aprenda a display: inline #01",
-      "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+      "titulo": "Tiida",
+      "url": "https://www.youtube.com/watch?v=nrQPDX5HsOE"
     },
     {
       "id": 5,
-      "categoriaId": 1,
-      "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-      "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+      "categoriaId": 2,
+      "titulo": "Vrumm",
+      "url": "https://www.youtube.com/watch?v=-ozuF9PjiiU"
     },
     {
       "id": 6,
-      "categoriaId": 1,
-      "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+      "categoriaId": 2,
+      "titulo": "Test Driver",
+      "url": "https://www.youtube.com/watch?v=1omQaR1aK9w"
     },
     {
       "id": 7,
-      "categoriaId": 1,
-      "titulo": "Novidades do Angular v9",
-      "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+      "categoriaId": 2,
+      "titulo": "Caçador de carros",
+      "url": "https://www.youtube.com/watch?v=nupyQxrZfTc"
     },
     {
       "id": 8,
       "categoriaId": 2,
-      "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-      "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
-    },
-    {
-      "id": 9,
-      "categoriaId": 2,
-      "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-      "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+      "titulo": "Test Driver manual 6 marchas",
+      "url": "https://www.youtube.com/watch?v=Wf9s_mFqLr0"
     },
     {
       "id": 10,
-      "categoriaId": 2,
-      "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-      "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+      "categoriaId": 3,
+      "titulo": "fizemos a revisão",
+      "url": "https://www.youtube.com/watch?v=jfrwzUJcTW0"
     },
     {
       "id": 11,
-      "categoriaId": 2,
-      "titulo": "API: Dicionário do Programador",
-      "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-    },
-    {
-      "id": 12,
-      "categoriaId": 2,
-      "titulo": "Usando Git Direito",
-      "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
-    },
-    {
-      "id": 13,
       "categoriaId": 3,
-      "titulo": "Teste de Turing",
-      "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
-    },
-    {
-      "id": 14,
-      "categoriaId": 3,
-      "titulo": "O que é Data Science?",
-      "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
-    },
-    {
-      "id": 15,
-      "categoriaId": 3,
-      "titulo": "Melhor forma de aprender Python",
-      "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
-    },
-    {
-      "id": 16,
-      "categoriaId": 3,
-      "titulo": "Como ingressar no mercado de Data Science?",
-      "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
-    },
-    {
-      "id": 17,
-      "categoriaId": 4,
-      "titulo": "Interestellar",
-      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+      "titulo": "Manutenção e Consumo",
+      "url": "https://www.youtube.com/watch?v=eZyhkLTrPrM"
     },
     {
       "id": 18,
       "categoriaId": 4,
-      "titulo": "Gattaca",
-      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+      "titulo": "Falha no Ar Condicionado",
+      "url": "https://www.youtube.com/watch?v=hDSc64hQNas"
     },
     {
       "id": 19,
       "categoriaId": 4,
-      "titulo": "A Chegada",
-      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+      "titulo": "velas de ingnição",
+      "url": "https://www.youtube.com/watch?v=sOcImgnigYo"
     },
     {
       "id": 20,
       "categoriaId": 4,
-      "titulo": "Feitiço do Tempo",
-      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+      "titulo": "filtros de oleo",
+      "url": "https://www.youtube.com/watch?v=6R0uVenMKFc"
     },
     {
       "id": 21,
-      "categoriaId": 5,
-      "titulo": "Final Fantasy 7",
-      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+      "categoriaId": 4,
+      "titulo": "Substituição do amortecedor traseiro",
+      "url": "https://www.youtube.com/watch?v=A_Il2Rlpq80"
     },
     {
       "id": 22,
-      "categoriaId": 5,
-      "titulo": "Assassins Creed Valhalla",
-      "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+      "categoriaId": 4,
+      "titulo": "Tranco ao engatar , câmbio AT Nissan",
+      "url": "https://www.youtube.com/watch?v=uHVB-d4Zi3w"
     },
     {
       "id": 23,
       "categoriaId": 5,
-      "titulo": "God of War 4",
-      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+      "titulo": "Gallo's",
+      "url": "https://www.youtube.com/watch?v=667724J7MuU"
     },
     {
       "id": 24,
       "categoriaId": 5,
-      "titulo": "Resident Evil 8",
-      "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+      "titulo": "Tiida Bassss",
+      "url": "https://www.youtube.com/watch?v=sS6pfotzLaQ"
     },
     {
-      "titulo": "Samba",
-      "url": "https://www.youtube.com/watch?v=I5Rl73wFmWs",
+      "titulo": "Fixa nas 20",
+      "url": "https://www.youtube.com/watch?v=E0sylpOZdh0",
       "categoriaId": 1,
       "id": 25
     }
